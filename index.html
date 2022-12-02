@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
     <title>Cervejaria do Pericles Delivery</title>
+    <script>
+        function valida_idade(valor){
+            if(valor===1){
+                window.location.href='home.html?acesso=1'
+            }else{
+                window.location.href='home.html?acesso=0'
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -18,8 +27,8 @@
 
         <p> Você é maior de 18 anos?</p>
         <div class="botoes">
-            <button>Sim</button>
-            <button>Não</button>
+            <button onclick="valida_idade(1)">Sim</button>
+            <button onclick="valida_idade(0)">Não</button>
         </div>
     </section>
     
